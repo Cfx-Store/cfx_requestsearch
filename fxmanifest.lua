@@ -11,6 +11,11 @@ games {
   "gta5"
 }
 
+dependencies {
+  "ox_lib",
+  "ox_inventory"
+}
+
 client_scripts {
   "src/client/**/*.lua"
 }
@@ -20,11 +25,6 @@ server_scripts {
 }
 
 shared_script {
-  "@es_extended/imports.lua",
   "@ox_lib/init.lua",
   "config.lua"
-}
-
-files {
-  "locales/*.json"
 }
